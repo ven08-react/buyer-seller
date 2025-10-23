@@ -1,9 +1,10 @@
 export class Greeting{
-constructor(public message: String){}
 
-sayHello(name: String){
+    constructor(public message: String, public obj: Object){}
 
-    return name
+    sayHello(name: String){
+        return `${name}  ${this.message}`
+    }
+
 }
-    
-}
+

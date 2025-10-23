@@ -11,7 +11,7 @@ export default function Home() {
   const [greeting, setGreeting] = useState<string>('')
   const count = useStore((state) => state.count)
   //const increase = useStore((state) =>state.increase)
-  const sample = new GreetingService();
+  const sample = new GreetingService('HELLO IS');
 
   const handleClick = () =>{
     setGreeting(sample.getGreeting(name || 'world' ))
